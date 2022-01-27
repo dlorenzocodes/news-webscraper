@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        h1{
+            color: #091026; 
+            text-align: center; 
+            font-family: 'DM Serif Display', serif;
+            font-size: 44px; margin-top: 3rem;
+        }
+
+        h2{
+            margin: 0;
+            font-size: 15px;
+            color: #091026;
+            font-family: 'Google Sans', 'sans-serif';
+        }
+
+        p{
+            margin: 0.2rem 1rem;
+            color: #091026;
+        }
+
+        img{
+            border-radius: 5px;
+        }
+
+        #main-img{
+            width: 40%;
+        }
+
+        .article-container{
+            background: #D9AA8F;
+            padding-bottom: 2rem;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .column-one,
+        .column-two{
+            padding: 0 3rem;
+        }
+
+        .article-wrapper{
+            display: flex;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid#091026;
+        }
+
+        .article-info{
+            padding-left: 2rem;
+            padding-top: 2rem;
+        }
+
+        .info-wrapper a {
+            color: #091026;
+            margin-top: 0.2rem;
+        }
+
+        .info-wrapper{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        @media only screen and (max-width: 1200px){
+
+            .article-wrapper{
+                display: block;
+            }
+
+            .article-info{
+                padding-left: 0;
+                padding-top: 1rem;
+            }
+
+            #main-img{
+                width: 60%;
+            }
+        }
+
+        @media only screen and (max-width: 500px){
+            .article-container{
+                width: 100%;
+            }
+
+            .info-wrapper{
+                font-size: 12px;
+            }
+
+            #main-img{
+                width: 100%;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Top Headlines for Today</h1>
+
+    <div class='article-container'>
+
+        <div class='column-one'>
+
+                <div class="article-wrapper">
+                    <img id='main-img' src='{{articleFourimg}}'>
+                    <div class='article-info'>
+                        <h2>{{articleFourheadline}}</h2>
+                        <div class='info-wrapper'>
+                            <a href='{{articleFourUrl}}'>Read Article</a>
+                            <p>{{articleFourDate}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-wrapper">
+                    <img src='{{articleOneimg}}'>
+                    <div class='article-info'>
+                        <h2>{{articleOneheadline}}</h2>
+                        <div class='info-wrapper'>
+                            <a href='{{articleOneUrl}}'>Read Article</a>
+                            <p>{{articleOneDate}}</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="article-wrapper">
+                    <img src='{{articleTwoImg}}'>
+                    <div class='article-info'>
+                        <h2>{{articleTwoheadline}}</h2>
+                        <div class='info-wrapper'>
+                            <a href='{{articleTwoUrl}}'>Read Article</a>
+                            <p>{{articleTwoDate}}</p>
+                        </div>
+                    </div>
+                </div>   
+        </div>
+
+
+        <div class='column-two'>
+                
+                 <div class="article-wrapper">
+                    <img src='{{articleThreeImg}}'>
+                    <div class='article-info'>
+                        <h2>{{articleThreeheadline}}</h2>
+                        <div class='info-wrapper'>
+                            <a href='{{articleThreeUrl}}'>Read Article</a>
+                            <p>{{articleThreeDate}}</p>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="article-wrapper">
+                    <img src='{{articleFiveimg}}'>
+                    <div class='article-info'>
+                        <h2>{{articleFiveheadline}}</h2>
+                        <div class='info-wrapper'>
+                            <a href='{{articleFiveUrl}}'>Read Article</a>
+                            <p>{{articleFiveDate}}</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="article-wrapper">
+                    <img src='{{articleSiximg}}'>
+                    <div class='article-info'>
+                        <h2>{{articleSixheadline}}</h2>
+                        <div class='info-wrapper'>
+                            <a href='{{articleSixUrl}}'>Read Article</a>
+                            <p>{{articleSixDate}}</p>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="article-wrapper">
+                    <img src='{{articleSevenimg}}'>
+                    <div class='article-info'>
+                        <h2>{{articleSevenheadline}}</h2>
+                        <div class='info-wrapper'>
+                            <a href='{{articleSevenUrl}}'>Read Article</a>
+                            <p>{{articleSevenDate}}</p>
+                        </div>
+                    </div>
+                </div>  
+        </div>  
+    </div>
+</body>
+</html>
