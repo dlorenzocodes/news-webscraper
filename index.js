@@ -63,7 +63,7 @@ const handlebarOptions ={
 }
 
 // email scheduled
-const sendEmail = cron.schedule('* * * * *', async () => {
+const sendEmail = cron.schedule('30 8 * * *', async () => {
     return await emailArticlesTemplate(leftCol, rightCol);
 })
 
